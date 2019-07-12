@@ -1,9 +1,6 @@
 package com.stackroute.pe1;
 
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.Assert.*;
 
@@ -13,6 +10,11 @@ public class StringRepeatTest {
     @Before
     public void setUp() {
         this.stringRepeat = new StringRepeat();
+    }
+
+    @After
+    public void tearDown() {
+        this.stringRepeat = null;
     }
 
     @BeforeClass
@@ -29,6 +31,12 @@ public class StringRepeatTest {
     public void givenStringAndNumberShouldReturnTheStringWithRepeatedSubstring() {
         String actualResult = stringRepeat.substringRepeat("Stackroute",5);
         assertEquals("Stackrouterouterouterouterouteroute", actualResult);
+    }
+
+    @Test
+    public void givenStringAndNumberShouldReturnTheStringWithRepeatedString() {
+        String actualResult = stringRepeat.substringRepeat("Stack",5);
+        assertEquals("StackStackStackStackStackStack", actualResult);
     }
 
     @Test

@@ -12,6 +12,11 @@ public class SmallCapitalTest {
         this.smallCapital = new SmallCapital();
     }
 
+    @After
+    public void tearDown() {
+        this.smallCapital = null;
+    }
+
     @BeforeClass
     public static void beforeClass() {
         System.out.println("Before class");

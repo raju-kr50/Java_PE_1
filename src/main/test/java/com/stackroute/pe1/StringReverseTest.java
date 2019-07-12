@@ -1,9 +1,6 @@
 package com.stackroute.pe1;
 
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.Assert.*;
 
@@ -13,6 +10,11 @@ public class StringReverseTest {
     @Before
     public void setUp() {
         this.stringReverse = new StringReverse();
+    }
+
+    @After
+    public void tearDown() {
+        this.stringReverse = null;
     }
 
     @BeforeClass
