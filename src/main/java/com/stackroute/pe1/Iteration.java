@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Iteration {
 
     public static void main(String[] args ) {
+
         int noOfIteration;
         Scanner scan = new Scanner(System.in);
         System.out.println("How many times you want to iterate? ");
