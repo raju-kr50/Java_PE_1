@@ -25,7 +25,7 @@ public class VowelConsonant {
             return "Enter non-empty String";
         }
         String result = "";
-        word = word.toUpperCase();
+        word = word.toLowerCase();
     //    int len
         for(int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);

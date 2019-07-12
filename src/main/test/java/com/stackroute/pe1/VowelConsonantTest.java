@@ -33,6 +33,11 @@ public class VowelConsonantTest {
         assertEquals("ConsonantVowelConsonantConsonantVowel", actualResult);
     }
 
+    @Test
+    public void givenNullShouldReturnNull() {
+        String actualResult = vowelConsonant.vowelOrConsonant(null);
+        assertNotNull("Enter non-empty String", actualResult);
+    }
 //    @Test
 //    public void givenASringShouldReturnTheResult() {
 //    VowelConsonent string = new VowelConsonent();
