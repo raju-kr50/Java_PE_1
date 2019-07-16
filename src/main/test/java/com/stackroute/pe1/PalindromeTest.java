@@ -18,16 +18,6 @@ public class PalindromeTest {
         this.palindrome = null;
     }
 
-    @BeforeClass
-    public static void beforeClass() {
-        System.out.println("Before Class");
-    }
-
-    @AfterClass
-    public static void afterClass() {
-        System.out.println("After Class");
-    }
-
     @Test
     public void givenNonPositiveNumberShouldReturnErrorMessage() {
         // act
@@ -37,19 +27,11 @@ public class PalindromeTest {
     }
 
     @Test
-    public void givenNumberShouldReturnPalindromeNumber() {
-        // act
-        String actualResult = palindrome.checkPalindrome(4567654);
-        //assert
-        assertEquals("Palindrome",actualResult);
-    }
-
-    @Test
     public void givenNumberShouldReturnNonPalindromeNumber() {
         // act
         String actualResult = palindrome.checkPalindrome(674345);
         //assert
-        assertEquals("Not Palindrome",actualResult);
+        assertEquals("Not Palindrome", actualResult);
     }
 
     @Test
@@ -57,7 +39,7 @@ public class PalindromeTest {
         // act
         String actualResult = palindrome.checkPalindrome(88688);
         //assert
-        assertEquals("The number is palindrome and the sum of even numbers is greater than 25",actualResult);
+        assertEquals("The number is palindrome and the sum of even numbers is greater than 25", actualResult);
     }
 
     @Test
@@ -65,6 +47,6 @@ public class PalindromeTest {
         // act
         String actualResult = palindrome.checkPalindrome(123454321);
         //assert
-        assertEquals("The number is palindrome and the sum of even numbers is not greater than 25",actualResult);
+        assertEquals("The number is palindrome and the sum of even numbers is not greater than 25", actualResult);
     }
 }

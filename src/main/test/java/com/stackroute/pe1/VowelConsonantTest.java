@@ -17,16 +17,6 @@ public class VowelConsonantTest {
         vowelConsonant = null;
     }
 
-    @BeforeClass
-    public static void beforeClass() {
-        System.out.println("Before class");
-    }
-
-    @AfterClass
-    public static void afterClass() {
-        System.out.println("After class");
-    }
-
     @Test
     public void givenStringShouldReturnAlphabetType() {
         String actualResult = vowelConsonant.vowelOrConsonant("Hello");
@@ -38,10 +28,5 @@ public class VowelConsonantTest {
         String actualResult = vowelConsonant.vowelOrConsonant(null);
         assertNotNull("Enter non-empty String", actualResult);
     }
-//    @Test
-//    public void givenASringShouldReturnTheResult() {
-//    VowelConsonent string = new VowelConsonent();
-//    String actualResult = string.vowelOrConsonant("Hello");
-//    assertEquals("consonent vowel consonent consonent vowel", actualResult );
-//    }
+
 }

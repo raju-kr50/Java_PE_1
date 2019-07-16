@@ -17,16 +17,6 @@ public class TomJerryTest {
         this.tomJerry = null;
     }
 
-    @BeforeClass
-    public static void beforeClass() {
-        System.out.println("Before class");
-    }
-
-    @AfterClass
-    public static void afterClass() {
-        System.out.println("After class");
-    }
-
     @Test
     public void givenAnIntegerShouldReturnNumberGreater() {
         String actualResult = tomJerry.tomAndJerry(34);

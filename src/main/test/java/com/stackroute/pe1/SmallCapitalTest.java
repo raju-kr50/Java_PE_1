@@ -17,16 +17,6 @@ public class SmallCapitalTest {
         this.smallCapital = null;
     }
 
-    @BeforeClass
-    public static void beforeClass() {
-        System.out.println("Before class");
-    }
-
-    @AfterClass
-    public static void afterClass() {
-        System.out.println("After class");
-    }
-
     @Test
     public void givenSmallCaseCharacterShouldReturnSmallLetter() {
         String actualResult = smallCapital.checkSmallCapital('h');

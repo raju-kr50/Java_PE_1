@@ -1,7 +1,5 @@
 package com.stackroute.pe1;
 
-import java.util.Scanner;
-
 public class TomJerry {
 
     public String tomAndJerry(int number) {
