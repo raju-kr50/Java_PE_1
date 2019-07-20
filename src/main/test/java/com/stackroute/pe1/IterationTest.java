@@ -6,12 +6,15 @@ import static org.junit.Assert.*;
 
 public class IterationTest {
     Iteration iteration;
+
+    //Created object before running the test cases
     @Before
     public void setUp() {
         // arrange
         this.iteration = new Iteration();
     }
 
+    //Destroyed test cases after running the test cases.
     @After
     public void tearDown() {
         this.iteration = null;
