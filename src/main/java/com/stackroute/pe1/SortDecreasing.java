@@ -1,23 +1,21 @@
-/*
+
 package com.stackroute.pe1;
-import java.util.Scanner;
+
+import java.util.Arrays;
+import java.util.Collections;
 
 public class SortDecreasing {
 
-    public static void main(String[] args) {
-        int number;
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a number");
-        number = scan.nextInt();
-
-        String strNumber = String.valueOf(number);
-        int array[]=new int[strNumber.length()];
-        for(int i = 0; i <= strNumber.length() -1 ; i++) {
-            array[i]=strNumber.charAt(i);
-            }
+    public int[] sort(int[] inputNumbers) {
+        int temp;
+        for (int i = 0; i < inputNumbers.length; i++) {
+            for (int j = i + 1; j < inputNumbers.length; j++)
+                if (inputNumbers[i] <= inputNumbers[j]) {
+                    temp = inputNumbers[i];
+                    inputNumbers[i] = inputNumbers[j];
+                    inputNumbers[j] = temp;
+                }
         }
-           // System.out.println(strNumber.length());
-
+        return inputNumbers;
     }
 }
-*/
